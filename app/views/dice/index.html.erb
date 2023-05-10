@@ -1,7 +1,14 @@
 <% die1 = rand 1..6 %>
 <% die2 = rand 1..6 %>
 <% total = die1 + die2 %>
+<% pics = [0, "https://upload.wikimedia.org/wikipedia/commons/1/1b/Dice-1-b.svg", "https://upload.wikimedia.org/wikipedia/commons/5/5f/Dice-2-b.svg",] %>
 
 <p>Your first die produced <%= die1 %> </p>
+
+<img src="<%= pics[die1] %>">
+
 <p>Your second die produced <%= die2 %> </p>
+
+<img src="<%= pics[die2] %>">
+
 <h1>Therefore, your total is <%= total %></h1>
